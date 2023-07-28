@@ -6,21 +6,21 @@ import { MediaCard } from "../MediaCard";
 import { DropdownCard } from "../DropdownCard";
 
 export interface CardProps extends React.HTMLAttributes<HTMLDivElement> {
-  variant?: CardType;
-  colorCard?: Color;
   title?: string;
   subtitle?: string;
   text?: string;
+  variant?: CardType;
+  colorCard?: Color;
   anchor?: string;
   img?: string;
 }
 
 export const Card: React.FC<CardProps> = ({
-  variant,
-  colorCard,
   title,
   subtitle,
+  variant,
   text,
+  colorCard,
   anchor,
   img,
   ...rest

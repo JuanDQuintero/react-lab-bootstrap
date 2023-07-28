@@ -11,11 +11,15 @@ type Story = StoryObj<typeof meta>;
 
 export const Playground: Story = {
   args: {
-    title: "",
-    subtitle: "",
-    children: "Text",
     variant: "basic",
-    color: "primary",
+    title: "Title",
+    subtitle: "Subtitle",
   },
   render: (args) => <Card {...args} />,
+
 };
+
+export const OutlinedCard: Story = {
+  
+};
+

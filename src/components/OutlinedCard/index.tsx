@@ -1,6 +1,5 @@
 import { Div } from "../Div";
 import { useEffect, useState } from "react";
-import { Color } from "@interfaces";
 import { BasicCard } from "../BasicCard";
 import { CardProps } from "../Card";
 

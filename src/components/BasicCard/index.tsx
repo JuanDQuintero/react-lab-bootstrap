@@ -18,8 +18,8 @@ export const BasicCard: React.FC<BasicCardProps> = ({
   return (
     <Div className={`card`} {...rest}>
       <Div className="card-body">
-        <h6 className="card-title">{title}</h6>
-        <h5 className="card-subtitle">{subtitle}</h5>
+        <h5 className="card-title">{title}</h5>
+        <h6 className="card-subtitle">{subtitle}</h6>
         <p className="card-subtitle">{text}</p>
         <a href="#" className="card-link">
           {anchor}
