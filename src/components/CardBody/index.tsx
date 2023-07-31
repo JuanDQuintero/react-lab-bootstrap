@@ -1,6 +1,5 @@
-import { Div } from "@components";
-import { CardProps } from "@interfaces";
+import { CardProps, Box } from "@components";
 
 export const CardBody: React.FC<CardProps> = ({ ...rest }) => {
-  return <Div className={`card-body`} {...rest} />;
+  return <Box className={`card-body`} {...rest} />;
 };

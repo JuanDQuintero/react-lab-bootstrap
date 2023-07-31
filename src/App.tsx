@@ -7,8 +7,8 @@ export function App() {
       <h1>Bootstrap and mui</h1>
       <Button variant="outline" />
       <Card
-        title="Ttiulo desde la app "
-      ></Card>
+        title="Ttiulo desde la app ">
+      </Card>
     </>
   );
 }

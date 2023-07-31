@@ -1,5 +1,5 @@
 import { CardProps } from "../Card";
-import { Div } from "../Div";
+import { Box } from "../Box";
 
 export interface BasicCardProps extends CardProps {
   title?: string;
@@ -16,15 +16,15 @@ export const BasicCard: React.FC<BasicCardProps> = ({
   ...rest
 }) => {
   return (
-    <Div className={`card`} {...rest}>
-      <Div className="card-body">
+    <Box className={`card`} {...rest}>
+      <Box className="card-body">
         <h5 className="card-title">{title}</h5>
         <h6 className="card-subtitle">{subtitle}</h6>
         <p className="card-subtitle">{text}</p>
         <a href="#" className="card-link">
           {anchor}
         </a>
-      </Div>
-    </Div>
+      </Box>
+    </Box>
   );
 };

@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { CardProps } from "../Card";
-import { Div } from "../Div";
+import { Box } from "../Box";
 
 interface DropdownCardProps extends CardProps {}
 
@@ -17,15 +17,15 @@ export const DropdownCard: React.FC<DropdownCardProps> = ({
     setExpanded(!expanded);
   };
   return (
-    <Div>
-      <Div className="card-header">
+    <Box>
+      <Box className="card-header">
         <h5 className="card-title">{title}</h5>
-      </Div>
+      </Box>
       <img className="card-img" src={img} alt="" />
-      <Div className="card-body">
+      <Box className="card-body">
         <h6 className="card-subtitle">{subtitle}</h6>
         <p className="card-subtitle">{text}</p>
-        <Div className="dropdown">
+        <Box className="dropdown">
           <a
             href="#"
             data-toggle="dropdown"
@@ -34,8 +34,8 @@ export const DropdownCard: React.FC<DropdownCardProps> = ({
           >
             {anchor}
           </a>
-        </Div>
-      </Div>
-    </Div>
+        </Box>
+      </Box>
+    </Box>
   );
 };

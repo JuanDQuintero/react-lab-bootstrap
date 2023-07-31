@@ -1,4 +1,4 @@
-import { Div } from "../Div";
+import { Div } from "../Box";
 import { useEffect, useState } from "react";
 import { BasicCard } from "../BasicCard";
 import { CardProps } from "../Card";

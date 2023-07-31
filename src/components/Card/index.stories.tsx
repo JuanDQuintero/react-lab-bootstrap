@@ -10,16 +10,7 @@ export default meta;
 type Story = StoryObj<typeof meta>;
 
 export const Playground: Story = {
-  args: {
-    variant: "basic",
-    title: "Title",
-    subtitle: "Subtitle",
-  },
   render: (args) => <Card {...args} />,
 
-};
-
-export const OutlinedCard: Story = {
-  
 };
 

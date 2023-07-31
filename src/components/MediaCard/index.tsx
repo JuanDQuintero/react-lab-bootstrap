@@ -1,5 +1,5 @@
 import { CardProps } from "../Card";
-import { Div } from "../Div";
+import { Div } from "../Box";
 
 interface MediaCardProps extends CardProps {}
 
